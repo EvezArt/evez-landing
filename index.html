@@ -138,10 +138,9 @@ function signup(plan) {
   if (plan === 'free') {
     window.location.href = 'https://evez-api2.fly.dev/signup';
   } else if (plan === 'pro') {
-    // TODO: Stripe checkout
-    alert('Pro signup coming soon! Email admin@evez.dev to get early access.');
+    window.location.href = 'https://buy.stripe.com/00waEZflx4WrbArgbM0RG0p';
   } else {
-    window.location.href = 'mailto:admin@evez.dev?subject=Business Plan Inquiry';
+    window.location.href = 'https://buy.stripe.com/00wfZj3CPex16g75x80RG0r';
   }
 }
 </script>
