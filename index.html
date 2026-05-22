@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVEZ-OS — Autonomous AI Infrastructure</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#e0e0e0;font-family:'JetBrains Mono',monospace;overflow-x:hidden}
+.hero{text-align:center;padding:80px 20px;background:linear-gradient(135deg,#0a0a0a 0%,#1a0a2e 50%,#0a0a0a 100%);border-bottom:1px solid #333}
+.hero h1{font-size:3.5em;color:#8b5cf6;text-shadow:0 0 40px rgba(139,92,246,0.5);margin-bottom:10px}
+.hero .tagline{font-size:1.2em;color:#a78bfa;margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto}
+.hero .stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:30px}
+.hero .stat{text-align:center}
+.hero .stat .num{font-size:2.5em;color:#8b5cf6;font-weight:bold}
+.hero .stat .label{color:#888;font-size:0.8em;text-transform:uppercase}
+.cta{display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;padding:15px 40px;border-radius:8px;text-decoration:none;font-size:1.1em;margin:10px;transition:transform 0.2s,box-shadow 0.2s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 5px 30px rgba(139,92,246,0.4)}
+.cta.secondary{background:transparent;border:2px solid #8b5cf6}
+.services{padding:60px 20px;max-width:1200px;margin:0 auto}
+.services h2{text-align:center;font-size:2em;color:#8b5cf6;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:25px;transition:border-color 0.3s,transform 0.2s}
+.card:hover{border-color:#8b5cf6;transform:translateY(-3px)}
+.card .icon{font-size:2em;margin-bottom:10px}
+.card h3{color:#a78bfa;margin-bottom:8px;font-size:1.1em}
+.card .desc{color:#888;font-size:0.9em;line-height:1.5;margin-bottom:15px}
+.card .price{color:#8b5cf6;font-size:1.3em;font-weight:bold}
+.card .price span{color:#666;font-size:0.6em}
+.card .tags{margin-top:10px}
+.card .tag{display:inline-block;background:#1e1b4b;color:#a78bfa;padding:3px 10px;border-radius:20px;font-size:0.75em;margin:2px}
+.bundles{padding:60px 20px;background:#111;max-width:1200px;margin:0 auto}
+.bundles h2{text-align:center;font-size:2em;color:#8b5cf6;margin-bottom:40px}
+.bundle{background:linear-gradient(135deg,#1e1b4b,#2e1065);border:2px solid #8b5cf6;border-radius:16px;padding:40px;margin-bottom:20px;text-align:center;max-width:600px;margin-left:auto;margin-right:auto}
+.bundle h3{font-size:1.5em;color:#e0e0e0;margin-bottom:10px}
+.bundle .bprice{font-size:2.5em;color:#8b5cf6;font-weight:bold;margin:15px 0}
+.bundle .bdesc{color:#aaa;margin-bottom:20px}
+.investor{padding:60px 20px;max-width:800px;margin:0 auto;text-align:center}
+.investor h2{color:#8b5cf6;font-size:2em;margin-bottom:20px}
+.investor .moat{text-align:left;max-width:600px;margin:20px auto}
+.investor .moat li{margin:10px 0;color:#ccc;line-height:1.5}
+.investor .moat strong{color:#a78bfa}
+.search-box{max-width:600px;margin:30px auto 0;display:flex;gap:10px}
+.search-box input{flex:1;padding:12px 20px;border-radius:8px;border:1px solid #333;background:#1a1a1a;color:#e0e0e0;font-size:1em}
+.search-box button{padding:12px 25px;border-radius:8px;border:none;background:#8b5cf6;color:#fff;cursor:pointer;font-size:1em}
+.search-results{max-width:700px;margin:20px auto;text-align:left}
+.search-results .result{background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:15px;margin:8px 0}
+.search-results .result .rtitle{color:#a78bfa;font-weight:bold}
+.search-results .result .rmeta{color:#666;font-size:0.8em;margin:5px 0}
+.search-results .result .rcontent{color:#aaa;font-size:0.9em}
+footer{text-align:center;padding:40px;color:#444;border-top:1px solid #222}
+footer a{color:#8b5cf6;text-decoration:none}
+.api-section{padding:40px 20px;max-width:800px;margin:0 auto}
+.api-section h2{color:#8b5cf6;margin-bottom:15px}
+pre{background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:15px;overflow-x:auto;color:#a78bfa;font-size:0.85em}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>⚡ EVEZ-OS</h1>
+  <div class="tagline">Autonomous AI Infrastructure for the Post-Cloud Era<br>FSC Doctrine • Phenomenologic Topology • Self-Manufacturing</div>
+  <a class="cta" href="https://845b0d79-fb7b-4e96-87ae-73537a81fa75.vultropenclaw.com/search/search?q=EVEZ">🔍 Search EVEZ</a>
+  <a class="cta secondary" href="https://845b0d79-fb7b-4e96-87ae-73537a81fa75.vultropenclaw.com/commerce/catalog">API Catalog →</a>
+  <a class="cta secondary" href="https://845b0d79-fb7b-4e96-87ae-73537a81fa75.vultropenclaw.com/commerce/investor">Investor Deck →</a>
+  <div class="stats">
+    <div class="stat"><div class="num">18</div><div class="label">Live Services</div></div>
+    <div class="stat"><div class="num">10</div><div class="label">API Products</div></div>
+    <div class="stat"><div class="num">83</div><div class="label">GitHub Repos</div></div>
+    <div class="stat"><div class="num">99%+</div><div class="label">Gross Margin</div></div>
+  </div>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search all EVEZ services, repos, research, manifolds..." onkeydown="if(event.key==='Enter')doSearch()">
+    <button onclick="doSearch()">Search</button>
+  </div>
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<div class="services">
+  <h2>⚡ API Products</h2>
+  <div class="grid" id="serviceGrid"></div>
+</div>
+
+<div class="bundles">
+  <h2>📦 Bundles</h2>
+  <div class="bundle">
+    <h3>EVEZ Mega API — Pro</h3>
+    <div class="bprice">$49.99/mo</div>
+    <div class="bdesc">ALL 8 services. 1 API key. 10K requests/day. Full FSC doctrine stack. 60% savings vs individual.</div>
+    <a class="cta" href="https://buy.stripe.com/14A6oJ1uHbkPeMD0cO0RG0v">Subscribe →</a>
+  </div>
+  <div class="bundle">
+    <h3>EVEZ Mega API — Enterprise</h3>
+    <div class="bprice">$249.99/mo</div>
+    <div class="bdesc">Unlimited. 99.9% SLA. Priority support. Custom integrations. On-prem available.</div>
+    <a class="cta" href="https://buy.stripe.com/7sYfZj4GT1Kf0VNaRs0RG0u">Subscribe →</a>
+  </div>
+</div>
+
+<div class="investor">
+  <h2>🚀 Why EVEZ Wins</h2>
+  <ul class="moat">
+    <li><strong>FSC Doctrine</strong> — Falsification-Survival-Compression. No other AI platform thinks this way.</li>
+    <li><strong>Phenomenologic Topology</strong> — Actions route through experiential states, not just business logic.</li>
+    <li><strong>Self-Manufacturing</strong> — Factory generates, audits, and ships code autonomously to GitHub.</li>
+    <li><strong>Zero Marginal Cost</strong> — Groq free tier + Vultr $6/mo = near-100% gross margin.</li>
+    <li><strong>Desert-Hardened</strong> — Mesh that survives 130°F. Built for the edge, not the data center.</li>
+    <li><strong>Retrocausal Stride Realizer</strong> — Discovers actions whose value is only visible from future states.</li>
+    <li><strong>Auto-Assembler</strong> — Shuffle → Inscribe → Harpoon. Discovers new forms autonomously.</li>
+  </ul>
+  <a class="cta" href="https://845b0d79-fb7b-4e96-87ae-73537a81fa75.vultropenclaw.com/commerce/investor">Full Investor Deck →</a>
+</div>
+
+<div class="api-section">
+  <h2>⚡ Quick Start</h2>
+  <pre>curl -X POST https://845b0d79-fb7b-4e96-87ae-73537a81fa75.vultropenclaw.com/commerce/register \
+  -H "Content-Type: application/json" \
+  -d '{"email":"you@company.com","plan":"free"}'
+
+# Response: {"api_key":"evez_free_...","plan":"free","rate_limit":"50 req/day"}
+
+# Use your key to proxy to any service:
+curl https://845baw...vultropenclaw.com/commerce/proxy \
+  -H "Authorization: Bearer evez_free_..." \
+  -d '{"service":"clawbreak","endpoint":"/chat","method":"POST","body":{"message":"Hello EVEZ"}}'</pre>
+</div>
+
+<footer>
+  <p>⚡ EVEZ-OS • Built by <a href="https://github.com/EvezArt">EvezArt</a> • <a href="https://x.com/evez666">@evez666</a></p>
+  <p>Bullhead City, AZ / Laughlin, NV • 2026</p>
+</footer>
+
+<script>
+const services = [
+  {name:"ClawBreak AI Chat",icon:"🤖",desc:"AI chat with FSC doctrine. Reflexive, adversarial, compression-native.",price:"$9.99",period:"/mo",tags:["chat","fsc","doctrine","ai"],link:"https://buy.stripe.com/7sYfZj4GT1Kf0VNaRs0RG0u"},
+  {name:"Cognition Forensics",icon:"🔬",desc:"AI output auditing. Fraud detection, hallucination scoring, chain-of-thought forensics.",price:"$49.99",period:"/mo",tags:["audit","forensics","hallucination"],link:"https://buy.stripe.com/14A6oJ1uHbkPeMD0cO0RG0v"},
+  {name:"Factory AI",icon:"🏭",desc:"Autonomous code generation, auditing, and GitHub shipping. Self-manufacturing pipeline.",price:"$99.99",period:"/mo",tags:["code-gen","autonomous","github"],link:"https://buy.stripe.com/bJe14pa1d9cH47Ze3E0RG0t"},
+  {name:"Auto-Research",icon:"📚",desc:"Academic research automation. Math auditing, fact-checking, paper generation.",price:"$19.99",period:"/mo",tags:["math","audit","paper"],link:"https://buy.stripe.com/fZu28t7T5coTgUL4t40RG0w"},
+  {name:"Mesh Network",icon:"🕸️",desc:"Self-healing mesh. Desert-hardened. AI diagnostics. Thermal management.",price:"$25.00",period:"/mo",tags:["mesh","healing","thermal"],link:"https://buy.stripe.com/6oUcN7ehtagL1ZRbVw0RG0x"},
+  {name:"Bridge Dashboard",icon:"📊",desc:"EVEZ Intelligence Bridge. Dashboard + audit API + event spine viewer.",price:"5.00",period:" one-time",tags:["dashboard","events","audit"],link:"https://buy.stripe.com/3cIeVfa1d2Oj0VNaRs0RG0s"},
+  {name:"Phenomenologic Topology",icon:"⧢",desc:"7-node manifold. Action routing through experiential basins. For agents that think.",price:"$29.99",period:"/mo",tags:["manifold","topology","basin"]},
+  {name:"Auto-Assembler",icon:"⥋",desc:"Shuffle → Inscribe → Harpoon. Discovers new forms by interleaving manifests.",price:"$39.99",period:"mo",tags:["shuffle","inscribe","harpoon"]},
+  {name:"404 Breakcore",icon:"🎵",desc:"Generative breakcore at 174 BPM. Amen break synthesis. Real-time remix. Streaming-ready.",price:"$14.99",period:"/mo",tags:["music","breakcore","audio"]},
+  {name:"EVEZ Search",icon:"🔍",desc:"Specialized search across all EVEZ services, GitHub repos, research, manifolds, and web.",price:"FREE",period:"",tags:["search","index","knowledge"]},
+];
+
+const grid = document.getElementById('serviceGrid');
+services.forEach(s => {
+  grid.innerHTML += `<div class="card">
+    <div class="icon">${s.icon}</div>
+    <h3>${s.name}</h3>
+    <div class="desc">${s.desc}</div>
+    <div class="price">${s.price}<span>${s.period}</span></div>
+    <div class="tags">${s.tags.map(t=>'<span class="tag">'+t+'</span>').join('')}</div>
+  </div>`;
+});
+
+async function doSearch() {
+  const q = document.getElementById('searchInput').value;
+  if (!q) return;
+  const el = document.getElementById('searchResults');
+  el.innerHTML = '<div style="text-align:center;color:#666">Searching...</div>';
+  try {
+    const r = await fetch(`https://845b0d79-fb7b-4e96-87ae-73537a81fa75.vultropenclaw.com/search/search?q=${encodeURIComponent(q)}&limit=5`);
+    const d = await r.json();
+    if (!d.results.length) { el.innerHTML='<div style="color:#666">No results found.</div>'; return; }
+    el.innerHTML = d.results.map(r=>`<div class="result">
+      <div class="rtitle">${r.title}</div>
+      <div class="rmeta">${r.source} • ${r.type} • score: ${r.score}</div>
+      <div class="rcontent">${r.content.substring(0,200)}</div>
+    </div>`).join('');
+  } catch(e) { el.innerHTML='<div style="color:#c00">Search error</div>'; }
+}
+</script>
+</body>
+</html>
